@@ -1,12 +1,16 @@
-function About() {
+export default function About() {
   return (
-    <div className="container mx-auto p-6 max-w-2xl text-center">
-      <h2 className="text-4xl font-bold mb-4 text-gray-800">About Us</h2>
-      <p className="text-lg text-gray-600 leading-relaxed">
-        Learn more about our platform and mission to create amazing experiences.
+    <div className="text-center">
+      <img
+        src="/path-to-your-photo.jpg"
+        alt="Your Avatar"
+        className="w-40 h-40 rounded-full mx-auto mb-6"
+      />
+      <h2 className="text-2xl font-bold">About Me</h2>
+      <p className="mt-4 text-gray-600">
+        Hello! I am a web developer passionate about building responsive and
+        engaging applications.
       </p>
     </div>
   );
 }
-
-export default About;
