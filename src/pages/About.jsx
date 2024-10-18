@@ -13,7 +13,7 @@ export default function About() {
           engaging applications. I specialize in creating user-friendly and
           aesthetically pleasing experiences.
         </p>
-      </div>
+      </div>{' '}
     </div>
   );
 }
