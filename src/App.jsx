@@ -4,13 +4,14 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    //outlet swaps between the different pages conditionally by using the URL of the pages
+    <>
       <Navigation />
-      <main className="flex-grow">
+      <main className=" w-screen">
         <Outlet />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
 
