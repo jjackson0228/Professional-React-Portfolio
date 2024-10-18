@@ -28,45 +28,63 @@ export default function Contact() {
   };
 
   return (
-    <form className="space-y-6 min-h-screen" onSubmit={handleSubmit}>
-      <div>
-        <label>Name</label>
-        <input
-          type="text"
-          name="name"
-          value={form.name}
-          onChange={handleChange}
-          className="w-full border p-2 rounded"
-        />
-        {errors.name && <p className="text-red-500">{errors.name}</p>}
-      </div>
-      <div>
-        <label>Email</label>
-        <input
-          type="email"
-          name="email"
-          value={form.email}
-          onChange={handleChange}
-          className="w-full border p-2 rounded"
-        />
-        {errors.email && <p className="text-red-500">{errors.email}</p>}
-      </div>
-      <div>
-        <label>Message</label>
-        <textarea
-          name="message"
-          value={form.message}
-          onChange={handleChange}
-          className="w-full border p-2 rounded"
-        ></textarea>
-        {errors.message && <p className="text-red-500">{errors.message}</p>}
-      </div>
-      <button
-        type="submit"
-        className="bg-blue-600 text-white py-2 px-4 rounded"
+    <div className="min-h-screen">
+      <form
+        className="max-w-lg mx-auto mt-14 p-14 bg-white shadow-md rounded-lg space-y-6"
+        onSubmit={handleSubmit}
       >
-        Send
-      </button>
-    </form>
+        <div>
+          <label className="block text-gray-700 font-medium mb-2">Name</label>
+          <input
+            type="text"
+            name="name"
+            value={form.name}
+            onChange={handleChange}
+            className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Enter your name"
+          />
+          {errors.name && <p className="text-red-500 mt-1">{errors.name}</p>}
+        </div>
+
+        <div>
+          <label className="block text-gray-700 font-medium mb-2">Email</label>
+          <input
+            type="email"
+            name="email"
+            value={form.email}
+            onChange={handleChange}
+            className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Enter your email"
+          />
+          {errors.email && <p className="text-red-500 mt-1">{errors.email}</p>}
+        </div>
+
+        <div>
+          <label className="block text-gray-700 font-medium mb-2">
+            Message
+          </label>
+          <textarea
+            name="message"
+            value={form.message}
+            onChange={handleChange}
+            className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            rows="4"
+            placeholder="Enter your message"
+          ></textarea>
+          {errors.message && (
+            <p className="text-red-500 mt-1">{errors.message}</p>
+          )}
+        </div>
+
+        <div className="flex justify-center">
+          <button
+            type="submit"
+            className="bg-blue-600 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition transform hover:scale-105"
+          >
+            Send
+          </button>
+        </div>
+      </form>
+    </div>
   );
 }
