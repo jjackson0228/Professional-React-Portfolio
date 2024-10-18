@@ -28,7 +28,7 @@ export default function Contact() {
   };
 
   return (
-    <form className="space-y-6" onSubmit={handleSubmit}>
+    <form className="space-y-6 min-h-screen" onSubmit={handleSubmit}>
       <div>
         <label>Name</label>
         <input
