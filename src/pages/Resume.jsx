@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div className="bg-gray-100 min-h-screen flex items-center justify-center flex-grow">
       <div className="text-center">
         <img
           src="/images/avatar.jpg"

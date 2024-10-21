@@ -28,9 +28,9 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex place-items-center">
       <form
-        className="max-w-lg mx-auto mt-14 p-14 bg-white shadow-md rounded-lg space-y-6"
+        className="max-w-lg mx-auto p-14 shadow-md rounded-lg space-y-6 bg-stone-300"
         onSubmit={handleSubmit}
       >
         <div>
@@ -79,7 +79,7 @@ export default function Contact() {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="bg-blue-600 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition transform hover:scale-105"
+            className="bg-gradient-to-r from-stone-600 to-lime-900 ... text-white py-3 px-6 rounded-lg shadow-lg transition transform hover:scale-105 hover:bg-gradient-to-r hover:from-stone-600 hover:to-yellow-200"
           >
             Send
           </button>

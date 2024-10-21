@@ -46,7 +46,7 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-screen px-4 py-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-screen w-screen flex flex-grow">
       {projects.map((project, index) => (
         <a
           key={index}
@@ -72,7 +72,7 @@ export default function Portfolio() {
             />
 
             {/* Project Title */}
-            <h3 className="text-xl font-semibold font-serif mb-4">
+            <h3 className="text-xl text-stone-800 font-semibold font-serif mb-4">
               {project.title}
             </h3>
 
@@ -82,7 +82,7 @@ export default function Portfolio() {
                 href={project.deployed}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
+                className="text-green-800 hover:text-violet-700 hover:text-xl"
               >
                 View App
               </a>
@@ -91,7 +91,7 @@ export default function Portfolio() {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
+                className="text-green-800 hover:text-violet-700 hover:text-xl"
               >
                 GitHub
               </a>
