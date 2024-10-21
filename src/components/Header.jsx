@@ -2,14 +2,16 @@ import { NavLink } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <header className="bg-gray-800 text-white p-6">
+    <header className="bg-gray-800 text-white p-12">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-3xl font-bold">Your Name</h1>
-        <nav className="space-x-6">
+        <h1 className="text-3xl font-bold font-serif">James Jackson</h1>
+        <nav className="space-x-6 text-lg font-serif">
           <NavLink
             to="/about"
             className={({ isActive }) =>
-              isActive ? 'text-blue-400' : 'text-white'
+              isActive
+                ? 'text-xl font-serif text-blue-400'
+                : 'text-white hover:text-xl'
             }
           >
             About Me
@@ -17,7 +19,7 @@ export default function Header() {
           <NavLink
             to="/portfolio"
             className={({ isActive }) =>
-              isActive ? 'text-blue-400' : 'text-white'
+              isActive ? 'text-xl text-blue-400' : 'text-white hover:text-xl'
             }
           >
             Portfolio
@@ -25,7 +27,7 @@ export default function Header() {
           <NavLink
             to="/contact"
             className={({ isActive }) =>
-              isActive ? 'text-blue-400' : 'text-white'
+              isActive ? 'text-xl text-blue-400' : 'text-white hover:text-xl'
             }
           >
             Contact
@@ -33,7 +35,7 @@ export default function Header() {
           <NavLink
             to="/resume"
             className={({ isActive }) =>
-              isActive ? 'text-blue-400' : 'text-white'
+              isActive ? 'text-xl text-blue-400' : 'text-white hover:text-xl'
             }
           >
             Resume

@@ -48,45 +48,56 @@ export default function Portfolio() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-screen px-4 py-8">
       {projects.map((project, index) => (
-        <motion.div
+        <a
           key={index}
-          className="flex flex-col justify-between border p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
-          variants={cardVariants}
-          initial="hidden"
-          animate="visible"
-          whileHover="hover"
+          href={project.deployed}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="no-underline"
         >
-          {/* Project Image */}
-          <img
-            src={project.imgPath}
-            alt={project.title}
-            className="w-full h-48 object-cover rounded-lg mb-4"
-          />
+          <motion.div
+            key={index}
+            className="flex flex-col justify-between border p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+            variants={cardVariants}
+            initial="hidden"
+            animate="visible"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            {/* Project Image */}
+            <img
+              src={project.imgPath}
+              alt={project.title}
+              className="w-full h-48 object-cover rounded-lg mb-4"
+            />
 
-          {/* Project Title */}
-          <h3 className="text-xl font-semibold mb-4">{project.title}</h3>
+            {/* Project Title */}
+            <h3 className="text-xl font-semibold font-serif mb-4">
+              {project.title}
+            </h3>
 
-          {/* Links Section */}
-          <div className="mt-auto text-center">
-            <a
-              href={project.deployed}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              View App
-            </a>
-            <span className="mx-2">|</span>
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              GitHub
-            </a>
-          </div>
-        </motion.div>
+            {/* Links Section */}
+            <div className="mt-auto text-center">
+              <a
+                href={project.deployed}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                View App
+              </a>
+              <span className="mx-2">|</span>
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                GitHub
+              </a>
+            </div>
+          </motion.div>
+        </a>
       ))}
     </div>
   );
