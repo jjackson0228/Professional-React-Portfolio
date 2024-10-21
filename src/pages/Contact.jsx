@@ -79,7 +79,7 @@ export default function Contact() {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="bg-gradient-to-r from-stone-600 to-lime-900 ... text-white py-3 px-6 rounded-lg shadow-lg transition transform hover:scale-105 hover:bg-gradient-to-r hover:from-stone-600 hover:to-yellow-200"
+            className="bg-gradient-to-r from-stone-600 to-lime-900 ... text-white py-3 px-6 rounded-lg shadow-lg transition transform hover:scale-105 hover:bg-gradient-to-r hover:from-lime-900 hover:to-violet-200"
           >
             Send
           </button>

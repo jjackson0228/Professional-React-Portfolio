@@ -5,7 +5,7 @@ export default function Resume() {
       <p className="text-xl text-gray-600 mb-6">
         Currently working on my resume. Check back soon!
       </p>
-      <div className="bg-white p-6 rounded-lg shadow-md">
+      <div className="bg-white p-6 rounded-lg shadow-md bg-stone-200">
         <h3 className="text-2xl font-semibold font-serif mb-4">
           Proficiencies:
         </h3>
