@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "twcss": "npx tailwindcss -i ./src/index.css -o ./src/output.css --watch"
+    "twcss": "npx tailwindcss -i ./src/index.css -o ./src/output.css"
   },
   "dependencies": {
     "boxicons": "^2.1.4",
