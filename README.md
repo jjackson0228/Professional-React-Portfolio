@@ -46,18 +46,22 @@ This portfolio is deployed on Netlify. You can view the live site here: [My Port
 
 - About page also first page that loads.
   ![About Page](/public/images/about1.png)
+
   ![About Page](/public/images/about2.png)
 
 - Portfolio page
   ![Portfolio Page](/public/images/portfolio1.png)
+
   ![Portfolio Page](/public/images/portfolio1.png)
 
 - Contact page
   ![Contact Page](/public/images/contact1.png)
+
   ![Contact Page](/public/images/contact2.png)
 
 - Resume page
   ![Resume Page](/public/images/resume1.png)
+
   ![Resume Page](/public/images/resume2.png)
 
 ## Tools and languages used
