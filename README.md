@@ -40,7 +40,7 @@ To run this project locally, follow these steps:
 
 ## Deployment
 
-This portfolio is deployed on Netlify. You can view the live site here: [My Portfolio Live on Netlify](https://6716cb703e850fdd89c745ef--jamesjackson.netlify.app/About).
+This portfolio is deployed on Netlify. You can view the live site here: [My Portfolio Live on Netlify](https://jamesjackson.netlify.app/).
 
 ## Screenshots
 
